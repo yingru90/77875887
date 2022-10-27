@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h4>標題</h4>
+    <h4 id="up">標題</h4>
     <h1>h1</h1>
     <h2>h2</h2>
     <h3>h3</h3>
@@ -74,7 +74,12 @@
     <h4>input輸入</h4>
     帳號:<input type="text">
     密碼:<input type="password">
-    輸入密碼:<input type="number" min="0" max="10">
+    輸入密碼:<input type="number" min="0" max="10"\
+            onkeyup="if(value<0)
+                        value=0
+                     else if(value>10)
+                        value=10
+             ">
     複選:
     <input type="checkbox">看書
     <input type="checkbox">旅行
