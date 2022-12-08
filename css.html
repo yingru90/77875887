@@ -12,13 +12,9 @@
             font-size: 20px;
         }
         /* Class選擇器(使用.符號) */
-        .one{
-            color: red;
-        }
-        .two{
-            font-size: 20px
-        }
-        /* ID選擇器(使用#符號) */
+            .one{color: red;}
+            .two{font-size: 20px;}
+            /* ID選擇器(使用#符號) */
         #one{
             color: green;
         }
@@ -35,7 +31,7 @@
             color: green;
         }
         /* 子選擇器(使用>符號) */
-        .child1+p{
+        .child1>a{
             color: green;
         }
        /* 同層相鄰選擇器(使用+符號) */
@@ -43,7 +39,7 @@
             color: red;
         }
        /* 同層全體選擇器(使用~符號) */
-        .child1+p{
+        .child3+p{
             color: blue;
         }
           /* 偽類選擇器(使用:符號) */
@@ -52,12 +48,13 @@
         }
           /* 偽元素選擇器(使用::符號) */
         .child5:before{
-            conter:"大家好，";
+            content:"大家好，";
         }
         .child5:after{
-            conter:"，請多多指教";
+            content:"，請多多指教";
         }
     </style>
+</head>
 </head>
 <body>
      <h4>型態選擇器(標籤)</h4>
@@ -81,7 +78,7 @@
             <a href="#">div>p>a</a>
         </p>
     </div>
-    <div class="child1">
+    <div class="child">
         <a href="#">div>a</a>
     </div>
     <hr>
@@ -127,7 +124,7 @@
     <p>9</p>
     <p>10</p>
     <hr>
-    <h4>偽類選擇器(使用:符號)</h4> 
+    <h4>偽類選擇器(使用::符號)</h4> 
     <a href="#" class="child4">偽類選擇器</a>
     <hr>
     <h4>偽元素選擇器(使用::符號)</h4>
