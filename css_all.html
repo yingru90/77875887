@@ -98,7 +98,29 @@
                 /* 圖片 */
                 list-style-image:url("https://fakeimg.pl/15x15/");
             }
-    </style>
+            /* Table表格 */
+                .table_style{
+                    /* 邊框合併 */
+                    border-collapse: collapse;
+                    width:300px;
+                    height:300px;
+                }
+                .table_style td{
+                    /* 水平 */
+                    text-align:center;
+                    /* 垂直 */
+                    vertical-align: top;
+                }
+                /* 偶數行 */
+                .table_style tr:nth-child(even){
+                    background-color: blue;
+                    color:white;
+                }
+                /* 奇數行 */
+                .table_style tr:nth-child(odd){
+                    background-color: yellow;
+                }
+    /</style> 
 </head>
 <body>
     <div class="text_color text_align text_line_height text_decoration text_inden text_letter_spacing  ">
@@ -120,5 +142,42 @@
         <li>3</li>
         123
     </ul>
+    <table border="1" cellspacing="0" cellpadding="0" class="table_style">
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>            
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+    </table>
 </body>
 </html>
