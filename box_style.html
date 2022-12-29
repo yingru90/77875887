@@ -34,9 +34,36 @@
             /* 框線顏色 */
             border-color: red;
         }
+        /* Display顯示 */
+        .display1{
+            display:inline;
+        }
+        .display2{
+            display:block;
+        }
+        .display3{
+            background-color: red;
+            width: 200px;
+            display:inline-block;
+        }
     </style>
 </head>
 <body>
     <div class="box_style border_style">div</div>
+    <hr>
+    <div class="display1">div1</div>
+    <div class="display1">div1</div>
+    <span class="display2">span1</span>
+    <span class="display2">span2</span>
+    <span class="display3">span3</span>
+    123
+    <hr>
+    <span>span1</span>
+    <span style="display:none;">span2</span>
+    <span>span3</span>
+    <hr>
+    <span>span1</span>
+    <span style="visibility:hidden;">span2</span>
+    <span>span3</span>
 </body>
 </html>
